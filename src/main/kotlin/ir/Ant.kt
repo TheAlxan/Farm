@@ -1,11 +1,10 @@
 package ir
 
-class Ant : Animal , BeingAbstract() , Runnable{
-    override fun run() {
-        while (true) {
-            println("ANT :: $ID :: POSITION :: $Position")
-            Thread.sleep(2000)
-        }
+class Ant : Animal, BeingAbstract() {
+
+    override fun Step() {
+        super.Step()
+        Move()
     }
 
     override fun Move() {
@@ -13,7 +12,8 @@ class Ant : Animal , BeingAbstract() , Runnable{
     }
 
     override fun Think() {
-
+        // Can't
     }
+
 
 }
