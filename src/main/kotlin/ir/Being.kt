@@ -1,0 +1,5 @@
+package ir
+
+interface Being {
+
+}
