@@ -11,6 +11,14 @@ object Factory {
                 ant.Type = "ANT"
                 return ant
             }
+
+            "FOOD" -> {
+                ID++
+                val food = Food()
+                food.ID = ID
+                food.Type = "FOOD"
+                return food
+            }
         }
         return Ant()
     }
